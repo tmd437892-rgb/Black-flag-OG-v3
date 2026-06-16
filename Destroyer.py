@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 user_sessions = {}
 
-OWNER_ID = 1515371958332686480
+OWNER_ID = 1507880423563460699
 AUTHORIZED_USERS_FILE = "authorized_users.json"
 ADMIN_USERS_FILE = "admin_users.json"
 TOKEN_FILE = "config.txt"
